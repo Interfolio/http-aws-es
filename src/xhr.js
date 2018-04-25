@@ -1,8 +1,10 @@
+"use strict";
+
 const AWS = require('aws-sdk');
 
 class XHRClient {
   constructor() {
-    this.client = new AWS.XHRClient();    
+    this.client = new AWS.XHRClient();
   }
 
   handleRequest(request, httpOptions, cb) {
